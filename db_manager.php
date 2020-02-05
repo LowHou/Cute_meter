@@ -26,13 +26,22 @@
                 $votes[$i] = $row["amount"];
                 $i = $i + 1;
             }
+            $total_votes = [
+                'baby_yoda' => $votes[0],
+                'porg' => $votes[1]
+            ];
+            $vote_count = json_encode($total_votes);
+            echo $vote_count;
+            /*XML version*/
+            /*
             echo "
                 <character>
                     <baby_yoda>".$votes[0]."</baby_yoda>
                     <porg>".$votes[1]."</porg>
                 </character>
-
             ";
+            */
+            
         }
         $conn->close();
 

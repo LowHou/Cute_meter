@@ -42,5 +42,5 @@
     </body>
 </html>
 
-<script src="js/main.js"></script>
-
+<script src="js/main_JSON.js"></script>
+<!--<script src="js/main_XML.js"></script>-->
