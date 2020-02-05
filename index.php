@@ -1,0 +1,46 @@
+<?php
+    require_once('db_manager.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="img/heart.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style/main.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+        <title> CUTE❤METER </title>
+    </head>
+    <body>
+        <center>
+            <h1 class="title"> Cute<span class="heart">❤</span>Meter </h1>
+        </center>
+
+        <div class="wrapper">
+
+        <div class="item">
+      
+        <div class="polaroid"><img src="img/porg.jpg" id="Porg" ondblclick="vote_character(this)">
+            <div class="caption">
+            <span id="porg_counter"> 0 </span> <span class="heart">❤</span>
+            <b>Porg</b>
+            </div>
+        </div>
+        </div>
+
+        <div class="item">
+           
+            <div class="polaroid"><img src="img/baby_yoda.jpg" id="Baby yoda" ondblclick="vote_character(this)">
+                <div class="caption">
+                    <span id="baby_yoda_counter"> 0 </span> <span class="heart">❤</span>
+                    <b>Baby Yoda</b>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+
+<script src="js/main.js"></script>
+
